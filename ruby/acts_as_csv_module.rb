@@ -19,6 +19,7 @@ module ActsAsCsv
   end
   module ClassMethods
     def acts_as_csv
+      include Enumerable
       include InstanceMethods
     end
   end
@@ -49,3 +50,4 @@ m = RubyCsv.new
 puts m.headers.inspect
 puts m.csv_contents.inspect
 m.each {|row| puts row.one}
+m.each_with_index {|row, num| puts "#{num}: #{row.two}"}
