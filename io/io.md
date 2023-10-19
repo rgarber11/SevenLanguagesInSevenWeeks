@@ -2,7 +2,7 @@
 ----------
 
 ## Day 1
-Io is the language that I know the least about from this book, and also probably the one I was least excited for. While I understand how powerful the message-passing paradigm can be, it feels more limiting than more functional languages, or partially imitated by the traditional "struct with methods" style of OOP. I understand that Io is more famous for its introspection, having some form of homoiconicity, but I think I'd prefer that in a Lisp-style language (We're coming for you Closure) where composition is more obvious. That being said, I haven't really worked much in message-passing languages, so maybe these few days will turn me around.
+Io is the language that I know the least about from this book, and also probably the one I was least excited for. While I understand how powerful the message-passing paradigm can be, it feels more limiting than more functional languages, or partially imitated by the traditional "struct with methods" style of OOP. I understand that Io is more famous for its introspection, having some form of homoiconicity, but I think I'd prefer that in a Lisp-style language (We're coming for you Clojure) where composition is more obvious. That being said, I haven't really worked much in message-passing languages, so maybe these few days will turn me around.
 ### Answer Answers
 Since this has an Answer section, I'll also give those.
 * Io is strongly typed, with every piece of data being associated with a type, and no conversions to `void *`.
