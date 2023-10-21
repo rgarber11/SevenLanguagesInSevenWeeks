@@ -15,7 +15,7 @@ TwoDArr := list clone do(
 		self at(x) at(y)
 	)
 	transpose := method(
-		returner := TwoDArr clone 
+		returner := self clone 
 		returner dim((self size), (self at(0) size))
 		self foreach(i, l, l foreach(j, v, returner set(j, i, v)))
 		return returner
@@ -47,6 +47,8 @@ matrix set(0,0,1)
 matrix set(0,1,1)
 matrix get(0, 1) println
 new_matrix := matrix transpose
+matrix type println
+new_matrix type println
 new_matrix get(0, 1) println
 new_matrix get(1, 0) println
 matrix println
