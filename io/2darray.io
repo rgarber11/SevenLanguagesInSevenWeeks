@@ -38,6 +38,7 @@ TwoDArr := list clone do(
 				if(contents == "nil", set(i, j, nil), set(i, j, (contents asNumber)))
 			)
 		)
+		file close
 	)
 )
 matrix := TwoDArr clone
