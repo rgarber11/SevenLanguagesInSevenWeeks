@@ -21,7 +21,10 @@ TwoDArr := list clone do(
 		return returner
 	)
 	write := method(filename,
-		file := File clone openForAppending(filename)
+		file := File clone openForUpdating(filename)
+		file remove
+		file = File clone openForUpdating(filename)
+		file rewind
 		file write((self size asString), "\n")
 		file write(((self at(0) size) asString), "\n")
 		self foreach(l, l foreach(v, (file write(v asString, "\n"))))
